@@ -10,7 +10,7 @@
 var rank = "Scout"
 var points = 0
 var troop = prompt("Hello! Welcome to Scouting Adventures! This is a game where you can vurtually expeirience the thrills of scouting! First of all, what troop are you going to join?","Type in your troop number here!");
-console.log(rank, points, troop);
+
 for (var i = 0; i < 1;) {
 do {
 if (isNaN(troop) == true) {
@@ -44,12 +44,21 @@ switch (points) {
       i++
     break;
 };
-  function func2(){
+</script>
+   <h3>Welcome to your Scout Dashboard!</h3>
+   <h5>This is the place where you can review your entire life of Scouts! This is where you can go on camp-outs and take classes! Doing those will earn you Scout points, and the more points you earn the higher your rank!</h5>
+   <p id="rankdis" onclick="func()">Click here to see your rank!</p>
+   <p id="point" onclick="func2()">Click here to see your points!</p>
+   <input type="button" value="Hike" onclick="hike()"/>
+   <input type="button" value="Classes" onclick=""/>
+</div>
+<script>
+function func2(){
   document.getElementById("point").innerHTML = "You have " + points + " points!";
-}
+};
 function func() {
   document.getElementById("rankdis").innerHTML = "Your rank is " + rank + "!";
-}
+};
 function hike() {
   var camping = confirm("Are you ready to go on a hike?");
   if (camping == true) {
@@ -80,21 +89,7 @@ function hike() {
         window.alert("Sorry, we don't know where that is. Please check your spelling!");
     }
     }
-  }
-  else{
-    window.alert("Oh, ok!");
-  }
-}
-</script>
-   <h3>Welcome to your Scout Dashboard!</h3>
-   <h5>This is the place where you can review your entire life of Scouts! This is where you can go on camp-outs and take classes! Doing those will earn you Scout points, and the more points you earn the higher your rank!</h5>
-   <p id="rankdis" onclick="func()">Click here to see your rank!</p>
-   <p id="point" onclick="func2()">Click here to see your points!</p>
-   <input type="button" value="Hike" onclick="hike()"/>
-   <input type="button" value="Classes" onclick=""/>
-</div>
-<script>
-
+  };
 </script>
 </body>
 </html>
