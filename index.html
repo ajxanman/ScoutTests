@@ -46,6 +46,9 @@ switch (points) {
       rank = "Eagle"
     break;
 };
+document.getElementById("point").onclick = function(){
+  document.getElementById("point").innerHTML = "You have " + points + " points!";
+};
 </script>
    <h3>Welcome to your Scout Dashboard!</h3>
    <h5>This is the place where you can review your entire life of Scouts! This is where you can go on camp-outs and take classes! Doing those will earn you Scout points, and the more points you earn the higher your rank!</h5>
