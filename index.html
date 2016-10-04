@@ -69,8 +69,23 @@ if (hiking = true){
         points = points + 15;
         window.alert("What a view! You have earned 15 points for hiking here! You now have " + points + " points!");
         break;
+    case ("death valley"):
+        points = points + 20;
+        window.alert("Hot choice! You have earned 20 points for hiking here! you now have " + points + " points!");
+        break;
+    case ("forest"):
+        points = points + 5;
+        window.alert("Oh look, a rabbit! For hiking here you have earned 5 points! You now have " + points + " points!");
+      break;
+    case ("mountains"):
+        points = points + 10;
+        window.alert("You're on top of the world! You have earned 10 points for hiking here! You now have " + points + " points!");
+      break;
+    default:
+        window.alert("Sorry! Troop " + troop + " can't go there! Please try again and check your spelling!");
      }
-    } 
+    }
+    
   };
 </script>
 </div>
