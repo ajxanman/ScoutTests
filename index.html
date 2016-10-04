@@ -58,7 +58,6 @@ function func() {
    <p id="rankdis" onclick="func()">Click here to see your rank!</p>
    <p id="point" onclick="func2()">Click here to see your points!</p>
    <input type="button" value="Hike" onclick="hike()"/>
-   <input type="button" value="Classes" onclick=""/>
 <script>
 function hike() {
 var hiking = confirm("Are you ready to hike?");
@@ -71,7 +70,7 @@ if (hiking = true){
         break;
     case ("death valley"):
         points = points + 20;
-        window.alert("Hot choice! You have earned 20 points for hiking here! you now have " + points + " points!");
+        window.alert("Hot choice! You have earned 20 points for hiking here! You now have " + points + " points!");
         break;
     case ("forest"):
         points = points + 5;
@@ -85,7 +84,9 @@ if (hiking = true){
         window.alert("Sorry! Troop " + troop + " can't go there! Please try again and check your spelling!");
      }
     }
-    
+    else{
+      window.alert("Oh. Ok!");
+    }
   };
 </script>
 </div>
